@@ -14,3 +14,68 @@
 30.04.2024	13:30:15	39e82d09-b1a8-4322-8163-e1ed44f73171	PATCH	/api/signup	405	PATCH not supported on this endpoint.
 30.04.2024	13:48:44	006c6fb7-4ff7-45b3-bf17-e0037d194053	POST	/api/login	403	Wrong password
 30.04.2024	13:49:13	799ee487-706d-404a-9349-81efb18edb6e	POST	/api/login	403	Authentication failed
+01.05.2024	18:32:14	4ac0dd9b-257d-4fc7-a484-15e6a2915016	GET	/api/orders?product_ordered=sofa	undefined	no such column: ordersCategory
+01.05.2024	18:35:04	7ba89fe5-22b2-4847-8a39-3b17e3b522db	PUT	/api/orders	405	PUT not supported on this endpoint. Please refer to the API documentation.
+01.05.2024	18:35:15	6cb9350f-cdac-40eb-ad76-66810032b63c	POST	/api/orders	undefined	4 values for 2 columns
+01.05.2024	18:35:36	0f701053-b7f9-4bb1-ac35-0f80e1ae1af4	POST	/api/orders	undefined	4 values for 2 columns
+01.05.2024	18:45:41	a00d6fa9-5eef-46c6-aa43-47ced89e535e	POST	/api/orders	undefined	4 values for 2 columns
+01.05.2024	18:46:01	724c48a2-ce36-47f1-9113-af2ba9251d8b	GET	/api/products	undefined	no such table: products
+01.05.2024	18:46:19	562e0622-d692-45f4-94e4-1227f6c0b2fc	GET	/api/products	undefined	no such table: products
+01.05.2024	18:53:45	fd399fd9-9f80-4f32-b037-c65e50c62b31	POST	/api/orders	undefined	4 values for 2 columns
+01.05.2024	18:53:58	9642442d-84e0-4a8b-be4b-9bc3979704e6	POST	/api/orders	undefined	4 values for 2 columns
+01.05.2024	18:54:47	a546a5f1-ab07-435d-8a7f-4b84aa8d8986	POST	/api/orders	undefined	4 values for 2 columns
+01.05.2024	19:04:00	d2e86d61-326e-45d7-9e10-bb8ad49cd3f5	DELETE	/api/orders?id=5	405	DELETE not supported on this endpoint. Please refer to the API documentation.
+01.05.2024	19:23:07	e2f84095-9022-4cf6-864d-daad0631dc99	POST	/api/orders	undefined	4 values for 2 columns
+01.05.2024	19:25:26	86b0f8b4-4ea2-4600-abf1-a5828b949452	PUT	/api/orders/3	400	Unexpected non-whitespace character after JSON at position 84
+01.05.2024	19:25:38	f990cfe1-6f6f-4d56-baf8-4e846eb645a4	PUT	/api/orders/3	400	Unexpected non-whitespace character after JSON at position 82
+01.05.2024	19:25:46	6fcc8f7c-d7da-4d14-96ea-fedbf6dbf64b	PUT	/api/orders/3	405	PUT not supported on this endpoint. Please refer to the API documentation.
+01.05.2024	19:39:42	5a3324d7-c00b-4b9d-b15f-a2a6a740ed47	GET	/api/orders/1	undefined	Cannot set headers after they are sent to the client
+01.05.2024	19:40:58	d7b7ad62-fd8a-4e49-b728-34ad2a3298f2	POST	/api/orders/3	405	POST not supported on this endpoint. Please refer to the API documentation.
+01.05.2024	19:45:13	ecabc6e4-f947-47fa-940d-691f4125feaa	PUT	/api/orders/3	405	PUT not supported on this endpoint. Please refer to the API documentation.
+01.05.2024	19:45:20	0ef1bffe-4a55-4755-a7c8-a258481fd676	POST	/api/orders/3	405	POST not supported on this endpoint. Please refer to the API documentation.
+01.05.2024	19:46:22	f2a7e365-bd86-4a05-bf10-f90ce14d1d51	DELETE	/api/orders/31	undefined	Cannot set headers after they are sent to the client
+01.05.2024	19:46:32	890eed06-9d3d-4759-b915-36cf3908caa2	DELETE	/api/orders	405	DELETE not supported on this endpoint. Please refer to the API documentation.
+01.05.2024	19:47:27	0951c819-0dce-4f3d-8575-786076cbb673	GET	/api/orders/1	undefined	Cannot set headers after they are sent to the client
+01.05.2024	19:57:19	b5a3bb26-9bf8-4871-9e8f-3c01b08415eb	GET	/api/orders/29	undefined	Cannot set headers after they are sent to the client
+01.05.2024	19:57:28	dca79878-524b-4eae-832b-f1aadf02296c	GET	/api/orders/29	undefined	Cannot set headers after they are sent to the client
+01.05.2024	19:57:29	7c2f60af-43e1-41de-8b83-9e2dbebd58e4	GET	/api/orders/29	undefined	Cannot set headers after they are sent to the client
+01.05.2024	19:57:30	2e08e267-5031-4166-90eb-94896f1c97bd	GET	/api/orders/29	undefined	Cannot set headers after they are sent to the client
+01.05.2024	19:57:30	7e921ee0-4ca6-4e2f-8989-d3b5d91b2491	GET	/api/orders/29	undefined	Cannot set headers after they are sent to the client
+01.05.2024	19:57:30	b2845919-3979-4b1d-b419-c5d1ee7181c3	GET	/api/orders/29	undefined	Cannot set headers after they are sent to the client
+01.05.2024	19:57:31	d5977d14-4862-4663-97c4-2996e49b82ef	GET	/api/orders/29	undefined	Cannot set headers after they are sent to the client
+01.05.2024	19:57:31	1187cc25-2c42-4878-9c79-bd4d705576d4	GET	/api/orders/29	undefined	Cannot set headers after they are sent to the client
+01.05.2024	19:59:49	b5bb8244-b748-485a-9033-d18ef8fa328b	GET	/api/orders/29	undefined	Cannot set headers after they are sent to the client
+01.05.2024	20:03:49	37be76d0-a371-43d3-aefa-1391db60b700	GET	/api/orders/29	undefined	Cannot set headers after they are sent to the client
+01.05.2024	20:04:17	2ec766ea-823c-4002-b2cb-6dd77ca5a8ed	GET	/api/orders/29	undefined	Cannot set headers after they are sent to the client
+01.05.2024	20:04:26	286b2626-b568-4bee-a68b-4800c95cf96b	GET	/api/orders/2956	404	CANNOT GET: Order with id 2956 doesn't exist.
+01.05.2024	20:07:25	2d81135f-94da-40c2-93f3-adbb5a2f5eb7	GET	/api/orders/3	undefined	Cannot set headers after they are sent to the client
+01.05.2024	20:07:38	3395e3f2-9a48-44bb-8b1c-2c0866c1742d	DELETE	/api/orders/32	undefined	Cannot set headers after they are sent to the client
+01.05.2024	20:16:47	b50688f3-1991-40bc-bbe2-2d5b51dbc421	GET	/api/orders/30	undefined	Cannot set headers after they are sent to the client
+01.05.2024	20:19:04	2aeadb44-4428-4867-9ac0-0f40e3a4a7ba	DELETE	/api/orders/33	undefined	Cannot set headers after they are sent to the client
+01.05.2024	20:21:01	2dc1d7f1-f6a1-4e97-9972-bd7775f96442	GET	/api/orders/3	undefined	Cannot set headers after they are sent to the client
+01.05.2024	20:21:21	49ffdac1-eb89-46da-bb78-c7d5373259b1	GET	/api/orders/36	404	CANNOT GET: Order with id 36 doesn't exist.
+01.05.2024	20:21:35	241f17e6-306c-4038-b4de-a47261a6727f	DELETE	/api/orders/36	404	CANNOT DELETE: Order with id 36 doesn't exist.
+01.05.2024	20:23:05	ac4872a8-1397-45ef-9f35-bdb1a7a1a4af	DELETE	/api/orders/34	undefined	Cannot set headers after they are sent to the client
+01.05.2024	20:23:09	f16056f5-c95e-4e62-81b9-829a0c999bd1	DELETE	/api/orders/3466	404	CANNOT DELETE: Order with id 3466 doesn't exist.
+01.05.2024	20:23:13	0a145986-5a99-48dd-a170-7068611c243b	GET	/api/orders/3466	404	CANNOT GET: Order with id 3466 doesn't exist.
+01.05.2024	20:37:31	148e7f68-7739-486b-8cd7-3fec291fc1c9	GET	/api/orders	400	Product category is required.
+01.05.2024	20:37:38	e1adfd70-7833-4952-8a7b-71bb1034eaec	GET	/api/orders	400	Product category is required.
+01.05.2024	20:55:08	b8675e67-3f16-4792-ba9e-84466a9f35f1	GET	/api/orders	404	CANNOT GET: Product undefined doesn't exist.
+01.05.2024	20:55:22	5a0f3681-d156-4c3a-9542-077d892fe23f	GET	/api/orders/1	undefined	Cannot set headers after they are sent to the client
+01.05.2024	20:58:19	fa09a32a-9065-4717-b59c-3428927adcb1	GET	/api/orders	404	CANNOT GET: Product undefined doesn't exist.
+01.05.2024	20:58:25	d3d4eaf5-3edc-4df1-af0b-683a7a478ee1	GET	/api/orders/	404	CANNOT GET: Product undefined doesn't exist.
+01.05.2024	21:07:34	be9bff97-c627-49e7-8fad-728c02fddcc3	GET	/api/orders?product=milk	undefined	next is not defined
+01.05.2024	21:07:53	d87a019b-c390-4ccd-b112-fc1004e9a38a	GET	/api/orders?product=s	undefined	next is not defined
+01.05.2024	21:20:25	351c926d-ea85-42af-877b-23f9223ad015	GET	/api/orders	undefined	Cannot read properties of undefined (reading 'length')
+01.05.2024	21:20:42	72875261-7baa-4440-b054-229aab41f9ce	GET	/api/orders/	undefined	Cannot read properties of undefined (reading 'length')
+01.05.2024	21:21:44	4342d465-bf91-4d2f-a39d-4ef29b68b51b	GET	/api/orders	404	CANNOT GET: product with  undefined doesn't exist.
+01.05.2024	21:27:40	12017fac-1941-4a1d-9bf5-e8af54421418	GET	/api/orders?product=sofas	404	Product 'sofas' not found.
+01.05.2024	21:27:48	df1ac11d-b004-43c6-9130-968f4cd7f221	GET	/api/orders?product=so	404	Product 'so' not found.
+01.05.2024	21:29:43	237e8dd2-9fcf-4156-9115-99b6a518a9df	GET	/api/orders?product=snacks	404	Product 'snacks' doesn't exist.
+01.05.2024	21:30:21	0905e3fa-f17f-410b-be89-c2f79371b3c5	GET	/api/orders/11	undefined	Cannot set headers after they are sent to the client
+01.05.2024	21:30:26	9bc10969-fa81-4050-be29-815a80d0fd73	GET	/api/orders/111	404	CANNOT GET: Order with id 111 doesn't exist.
+01.05.2024	21:33:04	328f1dc6-3237-4df7-8fd1-c868c091a0fd	DELETE	/api/orders/35	undefined	Cannot set headers after they are sent to the client
+01.05.2024	21:33:08	b993a5ce-e95d-49e8-bcf7-533e4cba5da6	DELETE	/api/orders/356	404	CANNOT DELETE: Order with id 356 doesn't exist.
+01.05.2024	21:34:07	7e6c7814-3dc7-4b5a-8f9f-524996093c11	DELETE	/api/orders/36	undefined	Cannot set headers after they are sent to the client
+01.05.2024	21:34:12	d6036349-ecbd-4da0-9b2a-7163430e7b1f	GET	/api/orders/36	404	CANNOT GET: Order with id 36 doesn't exist.
+01.05.2024	21:34:15	b0655836-472b-4820-bbe7-269abed9e49e	GET	/api/orders/3	undefined	Cannot set headers after they are sent to the client

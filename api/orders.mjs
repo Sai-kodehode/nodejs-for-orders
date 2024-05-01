@@ -1,14 +1,51 @@
 import express from "express";
 const router = express.Router();
+// import { ReqError } from "../util/errorHandler.mjs";
+import {
+  getOrders,
+  getOrdersCategory,
+  addOrder,
+  getOrder,
+  deleteOrder,
+} from "../util/dbOrdersQueries.mjs";
 
 router.all("/", (req, res) => {
   if (req.method === "GET") {
-    res.status(200).json({
-      message: "Order overview will come here",
-    });
+    const { product } = req.query;
+
+    if (product) {
+      const data = getOrdersCategory(product.toLowerCase());
+
+      if (data.length === 0) {
+        // Product not found in the database
+        const error = new Error(`Product '${product}' doesn't exist.`);
+        error.status = 404;
+        throw error;
+      }
+      res.status(200).json({ data: data });
+    } else {
+      // No product specified, return all orders
+      const data = getOrders();
+      res.status(200).json({ data: data });
+    }
+    // Filter by product category
+    // if (req.method === "GET") {
+    //   const { product } = req.query;
+    //   let data;
+    //   if (product) {
+    //     data = getOrdersCategory(product.toLowerCase());
+    //   } else {
+    //     data = getOrders();
+    //   }
+    //   res.status(200).json({
+    //     data: data,
+    //   });
+    // Adding new row
   } else if (req.method === "POST") {
-    res.status(200).json({
-      message: "Use this to post new orders.",
+    addOrder(req.body);
+    res.status(201).json({
+      message: "Order added successfully",
+      addedOrder: req.body,
     });
   } else {
     const error = new Error(
@@ -21,14 +58,37 @@ router.all("/", (req, res) => {
 
 router.all("/:orderId", (req, res) => {
   const { orderId } = req.params;
+  let message, data;
+  // Get order by id
   if (req.method === "GET") {
-    res.status(200).json({
-      message: `Get information about order with id ${orderId}`,
-    });
+    data = getOrder(orderId);
+    if (data) {
+      res.status(200).json({
+        message: `Got information about order with id ${orderId}`,
+        data: data,
+      });
+    } else {
+      const error = new Error(
+        `CANNOT GET: Order with id ${orderId} doesn't exist.`
+      );
+      error.status = 404;
+      throw error;
+    }
+    // Delete order by id
   } else if (req.method === "DELETE") {
-    res.status(200).json({
-      message: `Delete order with id ${orderId}`,
-    });
+    data = getOrder(orderId);
+    if (data) {
+      deleteOrder(orderId);
+      res.status(200).json({
+        message: `Deleted order with id ${orderId}`,
+      });
+    } else {
+      const error = new Error(
+        `CANNOT DELETE: Order with id ${orderId} doesn't exist.`
+      );
+      error.status = 404;
+      throw error;
+    }
   } else {
     const error = new Error(
       `${req.method} not supported on this endpoint. Please refer to the API documentation.`
@@ -36,6 +96,11 @@ router.all("/:orderId", (req, res) => {
     error.status = 405;
     throw error;
   }
+  res.status(200).json({
+    orderId: orderId,
+    message: message,
+    data: data,
+  });
 });
 
 export default router;
