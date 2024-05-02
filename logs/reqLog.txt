@@ -206,3 +206,17 @@
 01.05.2024	21:34:12	a1a0cfc5-6379-4358-976f-275e62c40fc8	GET	/api/orders/36
 01.05.2024	21:34:15	3fa3f88a-91ef-4b47-ae6b-6140006aa6cc	GET	/api/orders/3
 01.05.2024	21:34:19	39b06785-a239-49bb-92a4-ec491183056e	GET	/api/orders
+02.05.2024	20:05:35	414643f6-da03-4f89-84bd-76ce0d582021	GET	/api/orders
+02.05.2024	20:06:11	9a114809-2bd5-4e2e-b9be-4bdf0b3ed3c1	POST	/api/orders
+02.05.2024	20:06:16	c34f98b7-97a1-4ea8-9596-b984cd925eee	GET	/api/orders
+02.05.2024	20:06:29	2066b3e1-9664-49d3-9828-f189c0950ba5	PATCH	/api/orders
+02.05.2024	20:06:35	275f2026-9518-4135-97bd-54d3910dd93e	PUT	/api/orders
+02.05.2024	20:06:48	2b2c5e1f-3d08-4b00-af96-4beacc5c54c9	GET	/api/orders/37
+02.05.2024	20:07:03	89e426e4-4c31-465b-9e4c-f619c513d85e	PUT	/api/orders/37
+02.05.2024	20:07:15	1cf3cb91-b4a5-4886-8f8f-c20a19cb91a9	PATCH	/api/orders/37
+02.05.2024	20:07:25	76ef6cb7-c13b-4d52-b715-fdfe6b39cffc	OPTIONS	/api/orders/37
+02.05.2024	20:07:34	d9f162c3-5e55-4fb3-95e3-9cdc9514db5a	GET	/api/orders/smartphone
+02.05.2024	20:07:52	b38680ca-f264-4489-b697-11a213772a91	GET	/api/orders?product=smartphone
+02.05.2024	20:08:04	676fec61-68cc-4de3-9fcf-75bb82dd6637	PATCH	/api/orders?product=smartphone
+02.05.2024	20:08:16	b6b6bc1b-5890-41a9-9cb6-f95fbafd5855	DELETE	/api/orders/37
+02.05.2024	20:08:27	4e4a9f53-2fd0-4c2e-9070-d65ee82e99b1	GET	/api/orders

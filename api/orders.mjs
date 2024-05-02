@@ -1,6 +1,6 @@
 import express from "express";
 const router = express.Router();
-// import { ReqError } from "../util/errorHandler.mjs";
+import { ReqError } from "../util/errorHandler.mjs";
 import {
   getOrders,
   getOrdersCategory,
@@ -17,10 +17,11 @@ router.all("/", (req, res) => {
       const data = getOrdersCategory(product.toLowerCase());
 
       if (data.length === 0) {
-        // Product not found in the database
-        const error = new Error(`Product '${product}' doesn't exist.`);
-        error.status = 404;
-        throw error;
+        throw new ReqError(404, `Product '${product}' doesn't exist.`);
+        // // Product not found in the database
+        // const error = new Error(`Product '${product}' doesn't exist.`);
+        // error.status = 404;
+        // throw error;
       }
       res.status(200).json({ data: data });
     } else {
@@ -28,18 +29,7 @@ router.all("/", (req, res) => {
       const data = getOrders();
       res.status(200).json({ data: data });
     }
-    // Filter by product category
-    // if (req.method === "GET") {
-    //   const { product } = req.query;
-    //   let data;
-    //   if (product) {
-    //     data = getOrdersCategory(product.toLowerCase());
-    //   } else {
-    //     data = getOrders();
-    //   }
-    //   res.status(200).json({
-    //     data: data,
-    //   });
+
     // Adding new row
   } else if (req.method === "POST") {
     addOrder(req.body);
@@ -48,11 +38,16 @@ router.all("/", (req, res) => {
       addedOrder: req.body,
     });
   } else {
-    const error = new Error(
+    throw new ReqError(
+      405,
       `${req.method} not supported on this endpoint. Please refer to the API documentation.`
     );
-    error.status = 405;
-    throw error;
+
+    // const error = new Error(
+    //   `${req.method} not supported on this endpoint. Please refer to the API documentation.`
+    // );
+    // error.status = 405;
+    // throw error;
   }
 });
 
@@ -68,11 +63,16 @@ router.all("/:orderId", (req, res) => {
         data: data,
       });
     } else {
-      const error = new Error(
+      throw new ReqError(
+        404,
         `CANNOT GET: Order with id ${orderId} doesn't exist.`
       );
-      error.status = 404;
-      throw error;
+
+      // const error = new Error(
+      //   `CANNOT GET: Order with id ${orderId} doesn't exist.`
+      // );
+      // error.status = 404;
+      // throw error;
     }
     // Delete order by id
   } else if (req.method === "DELETE") {
@@ -83,18 +83,28 @@ router.all("/:orderId", (req, res) => {
         message: `Deleted order with id ${orderId}`,
       });
     } else {
-      const error = new Error(
+      throw new ReqError(
+        404,
         `CANNOT DELETE: Order with id ${orderId} doesn't exist.`
       );
-      error.status = 404;
-      throw error;
+
+      // const error = new Error(
+      //   `CANNOT DELETE: Order with id ${orderId} doesn't exist.`
+      // );
+      // error.status = 404;
+      // throw error;
     }
   } else {
-    const error = new Error(
+    throw new ReqError(
+      405,
       `${req.method} not supported on this endpoint. Please refer to the API documentation.`
     );
-    error.status = 405;
-    throw error;
+
+    // const error = new Error(
+    //   `${req.method} not supported on this endpoint. Please refer to the API documentation.`
+    // );
+    // error.status = 405;
+    // throw error;
   }
   res.status(200).json({
     orderId: orderId,

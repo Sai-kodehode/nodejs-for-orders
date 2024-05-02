@@ -79,3 +79,12 @@
 01.05.2024	21:34:07	7e6c7814-3dc7-4b5a-8f9f-524996093c11	DELETE	/api/orders/36	undefined	Cannot set headers after they are sent to the client
 01.05.2024	21:34:12	d6036349-ecbd-4da0-9b2a-7163430e7b1f	GET	/api/orders/36	404	CANNOT GET: Order with id 36 doesn't exist.
 01.05.2024	21:34:15	b0655836-472b-4820-bbe7-269abed9e49e	GET	/api/orders/3	undefined	Cannot set headers after they are sent to the client
+02.05.2024	20:06:29	6993727d-c6fb-4507-b701-7b4cca00ec5a	PATCH	/api/orders	405	PATCH not supported on this endpoint. Please refer to the API documentation.
+02.05.2024	20:06:35	05144349-969a-48e9-86c2-c57b45c665a8	PUT	/api/orders	405	PUT not supported on this endpoint. Please refer to the API documentation.
+02.05.2024	20:06:48	2ee09a19-2349-4226-a020-620880910c20	GET	/api/orders/37	undefined	Cannot set headers after they are sent to the client
+02.05.2024	20:07:03	6bc8b7d4-3835-4355-921d-95622f8ff0ec	PUT	/api/orders/37	405	PUT not supported on this endpoint. Please refer to the API documentation.
+02.05.2024	20:07:15	4a13fc94-7703-4ead-8977-f57a2cfed0de	PATCH	/api/orders/37	405	PATCH not supported on this endpoint. Please refer to the API documentation.
+02.05.2024	20:07:25	918e2d7d-a8d6-461c-a47b-d1119282ed13	OPTIONS	/api/orders/37	405	OPTIONS not supported on this endpoint. Please refer to the API documentation.
+02.05.2024	20:07:34	73c9a073-7093-4796-8162-29f4f98dd1d1	GET	/api/orders/smartphone	404	CANNOT GET: Order with id smartphone doesn't exist.
+02.05.2024	20:08:04	137b05dc-9122-4fcb-9eee-a6a6e0614aee	PATCH	/api/orders?product=smartphone	405	PATCH not supported on this endpoint. Please refer to the API documentation.
+02.05.2024	20:08:16	ce397540-9d89-44a6-9b92-4061a64a7b2a	DELETE	/api/orders/37	undefined	Cannot set headers after they are sent to the client
