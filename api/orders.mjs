@@ -1,111 +1,98 @@
 import express from "express";
 const router = express.Router();
-import { ReqError } from "../util/errorHandler.mjs";
+import { ReqError } from "../middleware/errorHandler.mjs";
+import jwtValidator from "../middleware/jwtValidator.mjs";
+import { validateOrderData } from "../middleware/validateData.mjs";
 import {
   getOrders,
   getOrdersCategory,
   addOrder,
   getOrder,
   deleteOrder,
-} from "../util/dbOrdersQueries.mjs";
+} from "../database/dbOrdersQueries.mjs";
 
-router.all("/", (req, res) => {
-  if (req.method === "GET") {
-    const { product } = req.query;
+// Middleware to validate order data only for POST requests
 
-    if (product) {
-      const data = getOrdersCategory(product.toLowerCase());
+router.get("/", jwtValidator, (req, res) => {
+  const { product } = req.query;
 
-      if (data.length === 0) {
-        throw new ReqError(404, `Product '${product}' doesn't exist.`);
-        // // Product not found in the database
-        // const error = new Error(`Product '${product}' doesn't exist.`);
-        // error.status = 404;
-        // throw error;
-      }
-      res.status(200).json({ data: data });
-    } else {
-      // No product specified, return all orders
-      const data = getOrders();
-      res.status(200).json({ data: data });
-    }
+  // initialize a variable to hold our data.
 
-    // Adding new row
-  } else if (req.method === "POST") {
-    addOrder(req.body);
-    res.status(201).json({
-      message: "Order added successfully",
-      addedOrder: req.body,
-    });
+  let data;
+
+  // fill data with content depending on if we received a query for category or not.
+  if (product) {
+    data = getOrdersCategory(product.toLowerCase());
   } else {
-    throw new ReqError(
-      405,
-      `${req.method} not supported on this endpoint. Please refer to the API documentation.`
-    );
-
-    // const error = new Error(
-    //   `${req.method} not supported on this endpoint. Please refer to the API documentation.`
-    // );
-    // error.status = 405;
-    // throw error;
+    data = getOrders();
   }
+
+  res.status(200).json({
+    data: data,
+  });
 });
 
+// router.all("/", jwtValidator, (req, res) => {
+//   if (req.method === "GET") {
+//     const { product } = req.query;
+
+//     if (product) {
+//       const data = getOrdersCategory(product.toLowerCase());
+
+//       if (data.length === 0) {
+//         throw new ReqError(404, `Product '${product}' doesn't exist.`);
+//       }
+//       res.status(200).json({ data: data });
+//     } else {
+//       const data = getOrders();
+//       res.status(200).json({ data: data });
+//     }
+//   } else {
+//     throw new ReqError(
+//       405,
+//       `${req.method} not supported on this endpoint. Please refer to the API documentation.`
+//     );
+//   }
+// });
+
+router.post("/", validateOrderData, (req, res) => {
+  addOrder(req.body);
+  res.status(201).json({
+    message: "Order added successfully",
+    addedOrder: req.body,
+  });
+});
+// selection by id
 router.all("/:orderId", (req, res) => {
   const { orderId } = req.params;
-  let message, data;
-  // Get order by id
+
   if (req.method === "GET") {
-    data = getOrder(orderId);
+    const data = getOrder(orderId);
     if (data) {
       res.status(200).json({
         message: `Got information about order with id ${orderId}`,
         data: data,
       });
     } else {
-      throw new ReqError(
-        404,
-        `CANNOT GET: Order with id ${orderId} doesn't exist.`
-      );
-
-      // const error = new Error(
-      //   `CANNOT GET: Order with id ${orderId} doesn't exist.`
-      // );
-      // error.status = 404;
-      // throw error;
+      throw new ReqError(404, `Order with id ${orderId} doesn't exist.`);
     }
-    // Delete order by id
   } else if (req.method === "DELETE") {
-    data = getOrder(orderId);
+    const data = getOrder(orderId);
     if (data) {
       deleteOrder(orderId);
       res.status(200).json({
         message: `Deleted order with id ${orderId}`,
       });
     } else {
-      throw new ReqError(
-        404,
-        `CANNOT DELETE: Order with id ${orderId} doesn't exist.`
-      );
-
-      // const error = new Error(
-      //   `CANNOT DELETE: Order with id ${orderId} doesn't exist.`
-      // );
-      // error.status = 404;
-      // throw error;
+      throw new ReqError(404, `Order with id ${orderId} doesn't exist.`);
     }
   } else {
     throw new ReqError(
       405,
       `${req.method} not supported on this endpoint. Please refer to the API documentation.`
     );
-
-    // const error = new Error(
-    //   `${req.method} not supported on this endpoint. Please refer to the API documentation.`
-    // );
-    // error.status = 405;
-    // throw error;
   }
+
   res.status(200).json({
     orderId: orderId,
     message: message,

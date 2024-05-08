@@ -1,6 +1,6 @@
 import express from "express";
 const router = express.Router();
-import { ReqError } from "../util/errorHandler.mjs";
+import { ReqError } from "../middleware/errorHandler.mjs";
 import {
   getProducts,
   getCategory,
@@ -8,7 +8,7 @@ import {
   getProduct,
   deleteProduct,
   updateProduct,
-} from "../util/dbQueries.mjs";
+} from "../database/dbQueries.mjs";
 
 router.all("/", (req, res) => {
   if (req.method === "GET") {

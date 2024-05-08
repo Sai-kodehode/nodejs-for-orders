@@ -88,3 +88,185 @@
 02.05.2024	20:07:34	73c9a073-7093-4796-8162-29f4f98dd1d1	GET	/api/orders/smartphone	404	CANNOT GET: Order with id smartphone doesn't exist.
 02.05.2024	20:08:04	137b05dc-9122-4fcb-9eee-a6a6e0614aee	PATCH	/api/orders?product=smartphone	405	PATCH not supported on this endpoint. Please refer to the API documentation.
 02.05.2024	20:08:16	ce397540-9d89-44a6-9b92-4061a64a7b2a	DELETE	/api/orders/37	undefined	Cannot set headers after they are sent to the client
+07.05.2024	18:42:31	69a21088-c4bc-4faf-936d-ac69b11790a0	GET	/api/orders/38	undefined	Cannot set headers after they are sent to the client
+07.05.2024	18:43:34	c8621097-56c1-4598-a22e-76147d15a6e8	GET	/api/orders/smartphone	404	CANNOT GET: Order with id smartphone doesn't exist.
+07.05.2024	18:43:45	c946eb7c-b6ed-4f5c-b19a-f2a04dd1008d	GET	/api/orders/smartphone	404	CANNOT GET: Order with id smartphone doesn't exist.
+07.05.2024	18:43:48	e155ef6e-0e36-4359-8d0e-de9ccf3286af	GET	/api/orders/smar%20tphone	404	CANNOT GET: Order with id smar tphone doesn't exist.
+07.05.2024	18:44:19	c75c33d2-f05c-4371-8626-039a6163afff	DELETE	/api/orders/38	undefined	Cannot set headers after they are sent to the client
+07.05.2024	18:47:08	6ec38c78-e9d7-47fb-bda1-0da470d06725	POST	/api/signup	400	Expected ',' or '}' after property value in JSON at position 39
+07.05.2024	18:47:23	1a7b67f8-3c99-4398-bda6-e24364702928	POST	/api/signup	403	no such table: users
+07.05.2024	18:51:00	5fa6d648-4455-4abb-bdf0-44f5f217d823	PUT	/api/signup	405	PUT not supported on this endpoint.
+07.05.2024	18:51:05	f25503d5-7d4d-4be2-83d1-ddeed0e447bd	POST	/api/signup	403	no such table: users
+07.05.2024	18:51:09	455ce45e-541e-4de8-874a-89878fb65f4c	GET	/api/signup	405	GET not supported on this endpoint.
+07.05.2024	18:57:59	5e9172fd-8436-442d-9f38-60c4645d6a52	GET	/api/signup	405	GET not supported on this endpoint.
+07.05.2024	18:58:00	f24e0b02-95d3-4732-80ea-ffcec3665984	GET	/api/signup	405	GET not supported on this endpoint.
+07.05.2024	18:58:03	00366569-4ce4-472b-a0e8-558caf7c5da5	POST	/api/signup	403	no such table: users
+07.05.2024	18:58:33	dd8a5e05-3d5f-43f1-a642-d04594304dd7	POST	/api/signup	403	no such table: users
+07.05.2024	18:58:35	bf4e977f-50bd-4f3e-ad6f-82fdb0b34a3f	POST	/api/signup	403	no such table: users
+07.05.2024	18:58:35	c287db2c-0da9-497d-9499-27bdcd70d18d	POST	/api/signup	403	no such table: users
+07.05.2024	18:58:36	b1ede436-48a5-4c7e-84f2-b36ffe05478a	POST	/api/signup	403	no such table: users
+07.05.2024	18:59:54	94b0879b-9432-4527-bda5-b0cffdb6a33b	POST	/api/signup	403	no such table: users
+07.05.2024	18:59:55	9570e00f-06eb-4763-83bf-7d84bbd133b6	POST	/api/signup	403	no such table: users
+07.05.2024	18:59:56	8474c76f-099a-4dde-8277-79c1baba582e	POST	/api/signup	403	no such table: users
+07.05.2024	18:59:56	bb1819e9-a550-421f-a2f3-9eac76840924	POST	/api/signup	403	no such table: users
+07.05.2024	18:59:56	92d2c3a2-e659-46c7-8daf-ad6740ef96f5	POST	/api/signup	403	no such table: users
+07.05.2024	18:59:57	f60260d4-6f32-472a-866a-4cde725054bc	POST	/api/signup	403	no such table: users
+07.05.2024	18:59:57	0ebd122b-e133-4c3b-bcfb-c2567b294105	POST	/api/signup	403	no such table: users
+07.05.2024	18:59:57	6edc2bf0-c075-45b4-b9eb-d20486e34fe7	POST	/api/signup	403	no such table: users
+07.05.2024	18:59:58	f86f5c59-95d9-4f18-ba34-aa242649292e	POST	/api/signup	403	no such table: users
+07.05.2024	18:59:58	60d1ce5b-47bb-4246-bf66-381687dfef77	POST	/api/signup	403	no such table: users
+07.05.2024	18:59:59	4e886470-5ecf-4859-bb42-86bb243b5456	POST	/api/signup	403	no such table: users
+07.05.2024	18:59:59	45c5cfd3-9b0c-4931-9580-bad7536ee9bb	POST	/api/signup	403	no such table: users
+07.05.2024	18:59:59	05e2f031-c446-4719-8514-cb560239c4d9	POST	/api/signup	403	no such table: users
+07.05.2024	19:06:59	4e81f766-fb22-478e-8699-af9ea0bf158f	POST	/api/signup	403	UNIQUE constraint failed: users.email
+07.05.2024	19:56:54	9557f5dc-819a-4563-8272-14a5454670b0	GET	/api/orders	undefined	authHeader is not defined
+07.05.2024	19:58:07	7ac2ed61-aad8-42f4-8e22-38a78659b6f2	POST	/api/orders	400	Bad control character in string literal in JSON at position 64
+07.05.2024	20:25:43	3aeb5c76-6351-4ead-a67a-72b4cf9a1e60	POST	/api/signup	400	Bad control character in string literal in JSON at position 64
+07.05.2024	20:27:00	87a4c691-953a-4cf4-8102-6e7dace77df6	POST	/api/signup	undefined	schema is not defined
+07.05.2024	20:29:27	1673dc22-47b9-4c6c-b618-6ca910357549	POST	/api/signup	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	20:29:57	b747cd33-b233-4cc5-a5f1-8162512e9a0e	POST	/api/signup	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	20:30:51	79c7a8d4-d50a-4208-aea6-f52a3213ab07	POST	/api/signup	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	20:30:53	6bd30eb7-1123-443c-adcb-871e99df27ed	POST	/api/signup	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	20:30:54	ef20291c-afa5-42ca-9392-51995e5d6208	POST	/api/signup	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	20:31:22	628d4e5a-59f9-4c05-bc27-ee849abd9de6	POST	/api/signup	400	ERROR: "product" is required ---ERROR: "password" is not allowed ---
+07.05.2024	20:31:34	ef1742d2-b530-4bca-b0e2-bcd493791baa	POST	/api/signup	400	Expected double-quoted property name in JSON at position 49
+07.05.2024	20:32:03	79dd49be-5410-4202-932e-cd95a7dbc5e5	POST	/api/login	403	Authentication failed
+07.05.2024	20:32:06	6125c261-1899-49d7-b22e-7f992c8f5121	GET	/api/login	405	GET not supported on this endpoint.
+07.05.2024	20:32:10	d1255f2a-d40c-400b-b1ad-4d6042cb1fbe	POST	/api/login	403	Authentication failed
+07.05.2024	20:32:16	71990cca-4ef0-43aa-a952-0ef7da6e3cd9	POST	/api/login	403	Authentication failed
+07.05.2024	20:34:52	b0f355cb-7e8e-4b05-bb80-3d0d8372816a	POST	/api/signup	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	20:35:10	28ae8d70-7e87-40a5-b46e-6e7becb65cc7	GET	/api/orders	undefined	authHeader is not defined
+07.05.2024	20:39:28	908f2999-1c19-48a4-9b79-97f0da339999	POST	/api/signup	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	20:49:58	4b3441ed-6af5-4183-933b-31233258e56e	GET	/api/orders	undefined	authHeader is not defined
+07.05.2024	20:57:06	b6df68c4-efc2-4daf-a925-15c530f5e0e6	GET	/api/orders	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	20:57:17	6837b339-8da8-4f64-9099-c102d62906b6	POST	/api/signup	403	UNIQUE constraint failed: users.email
+07.05.2024	20:57:39	224ab9f8-093b-46b7-8783-7a38387136a3	GET	/api/orders	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	20:58:30	f71f4f88-440e-4e46-97c2-1eb0cbc24e17	POST	/api/orders	undefined	authHeader is not defined
+07.05.2024	21:01:39	f49ee27f-9797-4333-b0ed-ec667ae898a2	GET	/api/orders	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	21:54:29	86ed6207-1a68-4744-8294-1937d5abbb4a	DELETE	/api/signup	405	DELETE not supported on this endpoint.
+07.05.2024	21:54:59	729746e7-56a5-4d52-8e28-57a77c515c88	GET	/api/orders	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	22:04:14	d0b0f358-0614-41fd-ba5e-c0719a0a9bea	GET	/api/orders	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	22:05:06	ce4f86e1-8db2-4605-bd99-8df1802eb56e	GET	/api/orders	undefined	authHeader is not defined
+07.05.2024	22:05:37	f03b4237-1774-43b4-87dc-30901b882794	GET	/api/orders	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	22:11:39	a2bf6eda-6eb2-4308-9d37-0eb68a8258e8	GET	/api/orders	400	ERROR: "customerEmail" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+07.05.2024	22:13:19	79fa9ff1-35af-4bf7-8fb2-7ae1605d942a	POST	/api/signup	403	UNIQUE constraint failed: users.email
+07.05.2024	22:14:17	9bc28392-53ac-4ec1-9bdc-1d5ef568d84e	POST	/api/orders	400	ERROR: "customerEmail" is required ---ERROR: "customer_email" is not allowed ---
+07.05.2024	22:14:57	58ffc605-478a-408e-b1c9-16b24920c4e0	POST	/api/orders	400	ERROR: "customerEmail" is required ---ERROR: "customer_email" is not allowed ---
+07.05.2024	22:17:33	06ee9f6d-2be5-4b30-b5fd-f0d2ccccb2a5	DELETE	/api/orders/39	undefined	message is not defined
+07.05.2024	22:23:52	b2e0e2f9-bd11-40d1-b90e-a9e831cd5425	DELETE	/api/orders/40	undefined	message is not defined
+07.05.2024	22:24:00	15a426b3-d34d-4320-aa6f-5173c7c86f96	GET	/api/orders/4	undefined	message is not defined
+07.05.2024	22:27:42	549b4481-093b-4537-ad2c-61de9c940071	GET	/api/orders	401	No token provided
+07.05.2024	22:27:44	4c581d14-b20a-4f94-9ab9-0156b048ea82	GET	/api/orders	401	No token provided
+07.05.2024	22:27:45	e1f99e62-7133-4133-9f94-decec25cac1b	GET	/api/orders	401	No token provided
+07.05.2024	22:27:45	6cf5c452-a3ca-4554-b8c0-becfa3cb2765	GET	/api/orders	401	No token provided
+07.05.2024	22:27:45	a870a139-28bc-4f98-af88-2ea53aeff056	GET	/api/orders	401	No token provided
+07.05.2024	22:27:45	0379ca66-6bc5-46df-b72f-dc879cc1d50b	GET	/api/orders	401	No token provided
+07.05.2024	22:27:46	468e05f4-c77e-4abb-b6b2-b62f07c91c58	GET	/api/orders	401	No token provided
+07.05.2024	22:27:46	fd35cb58-c9ba-485a-a13c-b26452cb2c86	GET	/api/orders	401	No token provided
+07.05.2024	22:27:46	773afbc2-c716-4065-9edb-f699beafebab	GET	/api/orders	401	No token provided
+07.05.2024	22:27:47	70129d8d-22f0-4bc3-8f3b-66db8d2ad668	GET	/api/orders	401	No token provided
+07.05.2024	22:27:47	82fce8f3-988f-413a-9e04-467f040d7852	GET	/api/orders	401	No token provided
+07.05.2024	22:27:47	f88091a1-ba15-4819-b98b-102bb02ed5e7	GET	/api/orders	401	No token provided
+07.05.2024	22:27:47	bd35d0ee-1b57-4c08-aff3-0165fc1c50c4	GET	/api/orders	401	No token provided
+07.05.2024	22:27:47	661679f2-ea32-4b29-8c3e-9dc8bbc9b02d	GET	/api/orders	401	No token provided
+07.05.2024	22:27:48	066c68ba-bc21-4a9c-9d4d-bd09888e3ffa	GET	/api/orders	401	No token provided
+07.05.2024	22:27:48	d420afad-d9ce-40a0-ae88-c706f16e594c	GET	/api/orders	401	No token provided
+07.05.2024	22:27:49	5b40148c-de66-4834-9905-efd6960975d8	GET	/api/orders	401	No token provided
+07.05.2024	22:28:01	2eed7e8c-ca5e-4199-bc61-90a2c0b83f1a	GET	/api/orders?product=smartphone	401	No token provided
+07.05.2024	22:28:02	79603813-a7b3-414c-aa8c-588bf6911d06	GET	/api/orders?product=smartphone	401	No token provided
+07.05.2024	22:28:02	e5eeefe8-01f6-4136-98e9-629ea25f1d82	GET	/api/orders?product=smartphone	401	No token provided
+07.05.2024	22:28:02	a8d5133d-92b6-4f4c-bf82-c93dcd800bc9	GET	/api/orders?product=smartphone	401	No token provided
+07.05.2024	22:28:02	3b318f5e-617d-4092-9c53-e81b4078cf7e	GET	/api/orders?product=smartphone	401	No token provided
+07.05.2024	22:28:03	eea1eb43-bc57-4373-9dcd-afa095ebcfd7	GET	/api/orders?product=smartphone	401	No token provided
+07.05.2024	22:28:03	9adb2276-15d2-4689-81fd-0f653149ac7a	GET	/api/orders?product=smartphone	401	No token provided
+07.05.2024	22:28:03	1fb2c668-3f3c-49c2-bd8b-0041d5db4d54	GET	/api/orders?product=smartphone	401	No token provided
+07.05.2024	22:28:03	292346f1-5692-42c1-b244-5faaf51c0682	GET	/api/orders?product=smartphone	401	No token provided
+07.05.2024	22:28:09	1059f9bc-5940-42fa-aac1-bcd644a1bb6e	GET	/api/orders/1	undefined	message is not defined
+07.05.2024	22:34:20	52a7d964-e44a-4f0b-a39a-634c8820edda	GET	/api/orders/1	undefined	message is not defined
+07.05.2024	22:34:24	5728ac4e-ce1f-4f90-a1dc-dbf6dafaf6f9	GET	/api/orders	401	No token provided
+07.05.2024	22:36:36	cc5009a8-3c75-4280-9fad-925ba8e5f4d9	GET	/api/orders/1	undefined	message is not defined
+07.05.2024	22:47:54	bb89dd57-1667-4569-9254-145f58b66d2a	GET	/favicon.ico	404	Not found!
+07.05.2024	22:48:11	e21b5ed5-33ae-4490-bf3b-56e083002972	GET	/favicon.ico	404	Not found!
+07.05.2024	22:49:10	e35cb078-2f4f-4d08-8d28-6e9ff3b03562	POST	/api/signup	403	UNIQUE constraint failed: users.email
+07.05.2024	22:50:12	0213a295-bfd7-46f3-b0a1-8b8fd399ddda	POST	/api/login/orders	404	Not found!
+07.05.2024	22:50:48	c53b3daf-60aa-4d21-a3a6-e7788d228c86	DELETE	/api/login/orders/41	404	Not found!
+07.05.2024	22:53:35	49357311-3151-4b21-8720-54c95ed80ab7	DELETE	/api/login/orders/41	404	Not found!
+07.05.2024	22:53:40	640485fd-6928-4668-ba51-e11c296e29b0	DELETE	/api/login/orders/42	404	Not found!
+07.05.2024	22:53:55	10f1bf11-e7f3-4e31-b63f-ca2eeba24419	POST	/api/login/orders	404	Not found!
+07.05.2024	22:55:17	4e277351-8db6-4fb2-949f-9dd461a11f96	POST	/api/login/orders	404	Not found!
+07.05.2024	22:55:32	0079e772-5440-4d51-96be-7b61fa4fe455	GET	/api/orders	401	No token provided
+07.05.2024	22:55:58	6919edb5-27cf-4645-aa8f-27d1052bccc7	GET	/api/orders	401	No token provided
+07.05.2024	22:55:59	3e94e21e-17ee-4e9f-955e-90dcb4931d69	GET	/api/orders	401	No token provided
+07.05.2024	22:55:59	2baf39e3-e3ad-451f-8657-514c94060903	GET	/api/orders	401	No token provided
+07.05.2024	22:55:59	2b730a96-5df1-4884-a788-24e6546d30f4	GET	/api/orders	401	No token provided
+07.05.2024	22:56:00	2287548f-e90d-462c-8078-e9a4e9d4cb44	GET	/api/orders	401	No token provided
+07.05.2024	22:56:00	a455b33d-0d24-420c-b7bc-709f8cbfcd2b	GET	/api/orders	401	No token provided
+07.05.2024	22:56:00	30bc2be5-dead-43cb-b431-b156c1dc5fa0	GET	/api/orders	401	No token provided
+07.05.2024	22:56:00	73596818-2f25-4e9d-8444-cce8b8c4cf9f	GET	/api/orders	401	No token provided
+07.05.2024	22:56:00	6054158a-06e7-48cb-8893-2b9839d0e208	GET	/api/orders	401	No token provided
+07.05.2024	22:56:01	c3d8aba7-6718-49a5-b71b-a4c353968c18	GET	/api/orders	401	No token provided
+07.05.2024	22:56:01	32cf4afe-7b14-4e2e-bdbb-e665e830d5fb	GET	/api/orders	401	No token provided
+07.05.2024	22:56:02	a39112ce-27b1-458f-a541-27ea973e4e42	GET	/api/orders	401	No token provided
+07.05.2024	22:56:22	08ad03f4-ebb1-4e19-a93d-f51298af1590	GET	/api/orders	401	No token provided
+07.05.2024	22:56:26	7fc1bc87-8cc0-43d3-8fd7-41678022beca	GET	/api/orders/1	undefined	message is not defined
+07.05.2024	22:56:36	a056dda6-ed39-49d6-84f0-6b486a9fb4ee	DELETE	/api/orders/42	undefined	message is not defined
+07.05.2024	22:57:07	9161e1b4-ea8e-49e8-b05e-3f97f7758271	GET	/api/orders?product=laptop	401	No token provided
+07.05.2024	23:02:42	d93bcda7-4874-4d7e-bb9b-16e7c21dc9be	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:44	60b7bfa5-8999-440f-a7e4-16f21b72bd5c	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:46	143784c5-72aa-4fcc-b6ac-0af6671c7712	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:46	12ad3f03-83e6-4ddd-9cce-3ab1e1e089e6	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:47	563dd620-024e-44a2-8393-50c5074dcc78	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:47	455b8a31-d302-4d18-be83-ba5f7af8d4dc	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:47	416dcba7-d081-4f61-b81b-722a931cf873	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:47	afa382ee-e491-493c-9cc9-874065d3cec1	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:48	31a26182-241c-4172-b4e1-7c5b2bd0a1ae	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:50	3806d3f0-5fd2-4ad6-b967-4bc72cf376eb	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:50	b4549ab5-1680-4868-9016-95b17e496bb1	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:51	4077c680-5ed5-44a3-ae58-8c481ddadff6	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:53	3188124e-0650-41ea-9a6a-dbd8b068f0da	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:54	5dc739ed-d2d5-4ba1-bd0f-6bdc89b60579	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:54	fa4ba4b4-84ef-4b4d-9056-ad33472bd856	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:54	e92755b7-96e9-467c-a604-cd837b94e34d	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:55	df9540fe-2c14-4c66-9311-b0a99fd63f49	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:55	36c4bce2-01c0-4d87-89d6-de01d4a35868	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:55	ae08ce23-ed28-40c6-95f7-14db1fcc7fe5	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:56	64957d96-2038-409f-87f5-2f1473d79550	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:56	45856cd5-a676-4df8-8810-6f223fcc0dac	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:56	1b9ac01d-3709-45b2-94e4-775ed89f6a43	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:56	4486f987-cbaf-40c7-a607-9a77cf488395	GET	/api/orders/	401	No token provided
+07.05.2024	23:02:56	af3d2366-b9a1-47bc-bb9a-01db88eb2684	GET	/api/orders/	401	No token provided
+08.05.2024	09:32:19	88ce70b6-2171-4bdc-981d-1bf35292cb83	GET	/api/orders/	401	No token provided
+08.05.2024	09:33:39	d1659473-f344-42b0-a658-fb9d0b3c5e8d	GET	/api/orders/41	undefined	message is not defined
+08.05.2024	09:34:00	82eb8c86-7d55-4069-98b2-0a96d79ac174	DELETE	/api/orders/41	undefined	message is not defined
+08.05.2024	09:37:00	85f8efc1-5c9f-4452-9274-ba58ba8b4872	GET	/api/orders	401	No token provided
+08.05.2024	09:42:43	213f1dfb-d2c1-4cb0-9252-d7565974a420	POST	/api/signup	403	UNIQUE constraint failed: users.email
+08.05.2024	09:42:56	b61badce-8d97-4cd8-8d91-dbbc87109f4d	POST	/api/signup	403	UNIQUE constraint failed: users.email
+08.05.2024	09:43:24	7af90c51-38c8-4dda-8843-c50eca534db9	GET	/api/login/orders	404	Not found!
+08.05.2024	10:29:10	02817ee3-ef8a-4d2e-a2ee-b002d3932836	GET	/api/orders/44	undefined	message is not defined
+08.05.2024	10:29:15	645df7d8-0fee-46e1-9a9a-4a1a51744868	DELETE	/api/orders/44	undefined	message is not defined
+08.05.2024	10:29:20	4c2d5318-58b6-4db0-b1bd-a3388135c9eb	GET	/api/orders/44	404	Order with id 44 doesn't exist.
+08.05.2024	10:30:05	20e5b879-0c05-4a1f-bc50-3f648ab2c044	POST	/api/orders	400	ERROR: "customer_email" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+08.05.2024	10:30:13	e09bec1c-fb79-4037-9129-bb6e583f6a7a	POST	/api/orders	400	ERROR: "customer_email" is required ---ERROR: "product" is required ---ERROR: "email" is not allowed ---ERROR: "password" is not allowed ---
+08.05.2024	10:30:32	10608b1b-bb21-4379-9007-de1b4dfaf775	POST	/api/orders	400	ERROR: "customer_email" must be a valid email ---
+08.05.2024	10:30:44	270fb898-0e39-4269-b1ba-da657678f69c	POST	/api/orders	400	ERROR: "product" length must be at least 3 characters long ---
+08.05.2024	10:32:23	2f070a78-3fcb-4f11-8d51-2f6ddcb7ea74	POST	/api/signup	400	ERROR: "password" should contain at least 2 special character ---ERROR: "password" should contain at least 2 uppercase character ---ERROR: "password" should contain at least 2 numeric character ---
+08.05.2024	10:32:27	91bcd340-f970-4cbf-ba65-99ed3c90156d	POST	/api/signup	400	ERROR: "password" should contain at least 2 special character ---ERROR: "password" should contain at least 2 uppercase character ---ERROR: "password" should contain at least 2 numeric character ---
+08.05.2024	10:32:34	febaace5-ae6c-4ef9-b2fb-d3d151479371	POST	/api/signup	400	ERROR: "email" must be a valid email ---ERROR: "password" should contain at least 2 special character ---ERROR: "password" should contain at least 2 uppercase character ---ERROR: "password" should contain at least 2 numeric character ---
+08.05.2024	10:32:38	93f0aac1-083a-4339-8665-7c56c6aca797	POST	/api/signup	400	ERROR: "password" should contain at least 2 special character ---ERROR: "password" should contain at least 2 uppercase character ---ERROR: "password" should contain at least 2 numeric character ---
+08.05.2024	10:32:47	7da45727-01a0-4b88-926f-ef50257973da	POST	/api/signup	400	ERROR: "password" should contain at least 2 special character ---ERROR: "password" should contain at least 2 numeric character ---
+08.05.2024	10:33:00	33a13c62-cbec-4fd2-b7a2-97ef675f7dff	POST	/api/signup	400	ERROR: "password" should contain at least 2 special character ---
+08.05.2024	10:33:17	19783d5c-32c6-4147-a625-ad560b8bc645	POST	/api/signup	400	ERROR: "password" should not contain any of the following: abcd ---
+08.05.2024	10:33:24	0e6e80a8-bd9c-4f2a-b13e-a100bd5a93f1	POST	/api/signup	400	ERROR: "password" should contain at least 2 lowercase character ---ERROR: "password" should not contain any of the following: 1234 ---
+08.05.2024	10:33:29	b336d2be-edb2-42a6-9db1-474194ebb355	POST	/api/signup	400	ERROR: "password" should contain at least 2 lowercase character ---
+08.05.2024	10:33:40	692d36ae-a2e4-407d-b6e2-56609b6b9175	POST	/api/signup	403	UNIQUE constraint failed: users.email
+08.05.2024	10:35:06	b4b24a85-5fc8-4b48-afb8-e6bcce118a74	GET	/api/orders/43	undefined	message is not defined
+08.05.2024	10:35:15	f2d41fb4-0b22-40ef-b20c-bf89cec721a8	DELETE	/api/orders/43	undefined	message is not defined
+08.05.2024	10:36:19	208b33d6-25e8-45cd-8754-9eaa1d1879a4	POST	/api/orders	400	ERROR: "customer_email" must be a valid email ---ERROR: "product" length must be at least 3 characters long ---
+08.05.2024	10:36:26	a480b124-2b3f-44ca-887b-ed8a340575aa	POST	/api/orders	400	ERROR: "product" length must be at least 3 characters long ---
+08.05.2024	10:36:31	a04f737a-2ccb-4ff7-96f0-e80fd5bf7d3c	POST	/api/orders	400	ERROR: "product" length must be at least 3 characters long ---
+08.05.2024	10:36:36	dd904d5b-045c-4a64-9d6b-92dc43b45eb8	POST	/api/orders	400	ERROR: "product" length must be at least 3 characters long ---
+08.05.2024	10:36:40	7b41571d-b8d1-4feb-9e1e-6e723435ea59	POST	/api/orders	400	ERROR: "customer_email" must be a valid email ---ERROR: "product" length must be at least 3 characters long ---
+08.05.2024	10:36:49	4eab37ce-1a93-48c2-a7f4-06c662935d55	POST	/api/orders	400	ERROR: "product" length must be at least 3 characters long ---
+08.05.2024	10:37:30	96d97aaa-c722-4c62-8372-38e1d926eccc	GET	/api/orders/45	undefined	message is not defined
+08.05.2024	10:37:33	ce9ce9e8-8169-4e1f-af96-cf72b1c2226f	GET	/api/orders/46	undefined	message is not defined
+08.05.2024	10:37:36	88b6156b-511d-44a3-8316-c03c6ffa3cc1	GET	/api/orders/47	undefined	message is not defined

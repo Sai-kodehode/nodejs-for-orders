@@ -34,4 +34,24 @@ const deleteOrder = (id) => {
   deleteOrderQuery.run(id);
 };
 
-export { getOrders, getOrdersCategory, addOrder, getOrder, deleteOrder };
+const signupUser = (email, password) => {
+  const signupUserQuery = db.prepare(
+    "INSERT INTI users (email, password) VALUES(?, ?)"
+  );
+  signupUserQuery.run(email, password);
+};
+
+const loginUser = (email) => {
+  const loginUserQuery = db.prepare("SELECT * FROM users WHERE email=?");
+  return loginUserQuery.get(email);
+};
+
+export {
+  getOrders,
+  getOrdersCategory,
+  addOrder,
+  getOrder,
+  deleteOrder,
+  signupUser,
+  loginUser,
+};

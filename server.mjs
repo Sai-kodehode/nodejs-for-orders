@@ -3,8 +3,8 @@ import productsRoute from "./api/products.mjs";
 import ordersRoute from "./api/orders.mjs";
 import signupRoute from "./api/signup.mjs";
 import loginRoute from "./api/login.mjs";
-import eventLogger from "./util/eventLogger.mjs";
-import { errorHandler, ReqError } from "./util/errorHandler.mjs";
+import eventLogger from "./middleware/eventLogger.mjs";
+import { errorHandler, ReqError } from "./middleware/errorHandler.mjs";
 
 // Initialize express
 const app = express();
