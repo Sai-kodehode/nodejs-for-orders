@@ -547,3 +547,17 @@
 08.05.2024	10:50:06	cbde0fbe-5c87-43e4-8d4f-30519827a947	GET	/api/orders?product=desk%20chair
 08.05.2024	10:50:09	c7b6e4ef-7c3d-48b6-b114-491df27f8367	GET	/api/orders?product=desk%20char
 08.05.2024	10:50:13	cfdf1d08-e8bd-41c7-b125-4c465a246940	GET	/api/orders?product=desk%20chair
+08.05.2024	10:54:05	6472c15b-8183-4292-a925-2de15aeda49c	POST	/api/signup
+08.05.2024	10:54:14	e46fe763-3c4c-40ef-829d-0156b4184b38	POST	/api/signup
+08.05.2024	10:54:19	7a7d56f2-1934-4a08-8924-1a2feeb095e2	POST	/api/signup
+08.05.2024	10:54:26	dc82fe32-8801-4f50-86f7-8520b9a7d146	POST	/api/login
+08.05.2024	10:54:40	6c781ce4-718a-4e33-94da-1c81d4620340	GET	/api/orders
+08.05.2024	10:54:45	911bab99-5364-436e-aeaa-b5ddccf6808c	GET	/api/orders
+08.05.2024	10:54:52	ab701680-a6fd-4546-aa0d-33e3435c2332	GET	/api/orders
+08.05.2024	10:55:23	b553ebbf-147c-4350-8545-1b38ff3d07b1	GET	/api/orders?product=smartphone
+08.05.2024	10:55:48	350c18e6-2d22-4998-93e1-3f3317488050	POST	/api/orders
+08.05.2024	10:55:58	d6f9b60f-beae-427c-817e-6fb6e4ae6f01	GET	/api/orders
+08.05.2024	10:56:09	ecfcd849-43dc-451a-9bfb-4e13b8a6a9d6	DELETE	/api/orders/49
+08.05.2024	10:56:15	9c6d68bd-94a1-41e9-b4c4-d2243388bee4	GET	/api/orders
+08.05.2024	10:56:37	3bce9c60-f541-4627-aca2-03d5fb5a9d08	DELETE	/api/orders/46
+08.05.2024	10:56:42	24c91157-72e7-485d-94d2-858d44d7c3e9	GET	/api/orders

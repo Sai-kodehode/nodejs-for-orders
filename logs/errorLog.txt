@@ -286,3 +286,7 @@
 08.05.2024	10:49:45	9e486923-b760-483b-b93b-eeb2303f4578	GET	/api/orders/48	404	Order with id 48 doesn't exist.
 08.05.2024	10:49:50	10f07756-17dc-4658-93af-04eb7f3346e1	GET	/api/orders/46	undefined	message is not defined
 08.05.2024	10:50:09	6147bc80-7789-497f-bdf2-bc45a4d0486b	GET	/api/orders?product=desk%20char	404	Product 'desk char' doesn't exist.
+08.05.2024	10:54:05	53bc9dd5-2c3e-422d-89d1-1d5714fd4eb2	POST	/api/signup	400	ERROR: "password" should contain at least 2 special character ---ERROR: "password" should contain at least 2 numeric character ---
+08.05.2024	10:54:14	c04d2980-6436-46a8-b65a-b3e8fd000fd8	POST	/api/signup	400	ERROR: "password" should contain at least 2 numeric character ---
+08.05.2024	10:56:09	a7a4e9c1-f624-411b-a7fe-5fe2a0ce0c48	DELETE	/api/orders/49	undefined	message is not defined
+08.05.2024	10:56:37	1f2327eb-88ac-4213-a8cd-a1fb43251a36	DELETE	/api/orders/46	undefined	message is not defined
