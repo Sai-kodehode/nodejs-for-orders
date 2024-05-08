@@ -11,50 +11,6 @@ import {
   deleteOrder,
 } from "../database/dbOrdersQueries.mjs";
 
-// Middleware to validate order data only for POST requests
-
-router.get("/", jwtValidator, (req, res) => {
-  const { product } = req.query;
-
-  // initialize a variable to hold our data.
-
-  let data;
-
-  // fill data with content depending on if we received a query for category or not.
-  if (product) {
-    data = getOrdersCategory(product.toLowerCase());
-  } else {
-    data = getOrders();
-  }
-
-  res.status(200).json({
-    data: data,
-  });
-});
-
-// router.all("/", jwtValidator, (req, res) => {
-//   if (req.method === "GET") {
-//     const { product } = req.query;
-
-//     if (product) {
-//       const data = getOrdersCategory(product.toLowerCase());
-
-//       if (data.length === 0) {
-//         throw new ReqError(404, `Product '${product}' doesn't exist.`);
-//       }
-//       res.status(200).json({ data: data });
-//     } else {
-//       const data = getOrders();
-//       res.status(200).json({ data: data });
-//     }
-//   } else {
-//     throw new ReqError(
-//       405,
-//       `${req.method} not supported on this endpoint. Please refer to the API documentation.`
-//     );
-//   }
-// });
-
 router.post("/", validateOrderData, (req, res) => {
   addOrder(req.body);
   res.status(201).json({
@@ -62,6 +18,30 @@ router.post("/", validateOrderData, (req, res) => {
     addedOrder: req.body,
   });
 });
+
+router.all("/", jwtValidator, (req, res) => {
+  if (req.method === "GET") {
+    const { product } = req.query;
+
+    if (product) {
+      const data = getOrdersCategory(product.toLowerCase());
+
+      if (data.length === 0) {
+        throw new ReqError(404, `Product '${product}' doesn't exist.`);
+      }
+      res.status(200).json({ data: data });
+    } else {
+      const data = getOrders();
+      res.status(200).json({ data: data });
+    }
+  } else {
+    throw new ReqError(
+      405,
+      `${req.method} not supported on this endpoint. Please refer to the API documentation.`
+    );
+  }
+});
+
 // selection by id
 router.all("/:orderId", (req, res) => {
   const { orderId } = req.params;

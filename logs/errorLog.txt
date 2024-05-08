@@ -270,3 +270,19 @@
 08.05.2024	10:37:30	96d97aaa-c722-4c62-8372-38e1d926eccc	GET	/api/orders/45	undefined	message is not defined
 08.05.2024	10:37:33	ce9ce9e8-8169-4e1f-af96-cf72b1c2226f	GET	/api/orders/46	undefined	message is not defined
 08.05.2024	10:37:36	88b6156b-511d-44a3-8316-c03c6ffa3cc1	GET	/api/orders/47	undefined	message is not defined
+08.05.2024	10:39:40	74f39ebc-aa8f-4bfa-8bc9-2de5b0544c41	GET	/api/orders/47	undefined	message is not defined
+08.05.2024	10:43:59	88c46de5-6992-435d-a499-99f2036440e6	POST	/api/signup	400	ERROR: "password" should contain at least 2 special character ---
+08.05.2024	10:44:04	58514803-f32c-4326-9732-7587af67c62d	POST	/api/signup	403	UNIQUE constraint failed: users.email
+08.05.2024	10:45:04	ee909b02-e54b-4bbd-bfc5-9c7e9528513b	GET	/api/orders/1	undefined	message is not defined
+08.05.2024	10:45:20	449d2f55-21f6-4ed3-8d29-1ef74560a48f	POST	/api/orders	405	POST not supported on this endpoint. Please refer to the API documentation.
+08.05.2024	10:45:43	f8eabdcf-0fea-4867-a698-e6cfad06dbf4	POST	/api/orders	405	POST not supported on this endpoint. Please refer to the API documentation.
+08.05.2024	10:46:39	ba090e64-0cd3-47a3-90d2-5caeb8555aef	GET	/api/orders/47	undefined	message is not defined
+08.05.2024	10:46:45	b1b7d8bc-5445-42f7-9e40-d16452ae7b39	DELETE	/api/orders/47	undefined	message is not defined
+08.05.2024	10:47:17	bd4b0146-bedc-45d8-b5db-4c4e6fc9b0e1	POST	/api/orders	405	POST not supported on this endpoint. Please refer to the API documentation.
+08.05.2024	10:48:16	cf9f3aa3-3de3-435f-b002-c99d10f42937	POST	/api/orders	405	POST not supported on this endpoint. Please refer to the API documentation.
+08.05.2024	10:48:18	5b74cc2d-f54c-472d-8b2c-4ddd9c825d2e	POST	/api/orders	405	POST not supported on this endpoint. Please refer to the API documentation.
+08.05.2024	10:48:37	30601c7b-807f-41eb-9351-eae4d7d591a7	POST	/api/orders	405	POST not supported on this endpoint. Please refer to the API documentation.
+08.05.2024	10:49:41	888b6f07-7c4f-4e39-a045-f08a5460b6ce	DELETE	/api/orders/48	undefined	message is not defined
+08.05.2024	10:49:45	9e486923-b760-483b-b93b-eeb2303f4578	GET	/api/orders/48	404	Order with id 48 doesn't exist.
+08.05.2024	10:49:50	10f07756-17dc-4658-93af-04eb7f3346e1	GET	/api/orders/46	undefined	message is not defined
+08.05.2024	10:50:09	6147bc80-7789-497f-bdf2-bc45a4d0486b	GET	/api/orders?product=desk%20char	404	Product 'desk char' doesn't exist.
